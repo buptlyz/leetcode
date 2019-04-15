@@ -1,6 +1,6 @@
 /**
- * @param {array} arr
- * @param {int} sortType
+ * @param {Array} arr
+ * @param {Integer} sortType
  */
 export default function insertionSort(arr, sortType) {
   if (!Array.isArray(arr)) {
