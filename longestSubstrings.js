@@ -1,3 +1,4 @@
+// https://en.wikipedia.org/wiki/Longest_common_substring_problem
 /**
  * @param {String} S
  * @param {String} T
