@@ -5,7 +5,7 @@
  *     this.left = this.right = null;
  * }
  */
-export default function TreeNode(val) {
+function TreeNode(val) {
   this.val = val;
   this.left = this.right = null;
 }

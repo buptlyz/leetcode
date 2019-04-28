@@ -2,7 +2,7 @@
  * @param {Array} arr
  * @param {Integer} sortType
  */
-export default function insertionSort(arr, sortType) {
+function insertionSort(arr, sortType) {
   if (!Array.isArray(arr)) {
     throw new TypeError('第一个参数应该是数组');
   }

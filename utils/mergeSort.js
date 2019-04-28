@@ -6,7 +6,7 @@
  * @param {Integer} r 第二个子数组的end
  * @param {Integer} sortType 生序1 or 降序-1
  */
-export function merge(A, p, q, r, sortType) {
+function merge(A, p, q, r, sortType) {
   switch (sortType) {
     case -1:
       mergeDescend(A, p, q, r);
