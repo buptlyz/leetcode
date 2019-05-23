@@ -1,12 +1,6 @@
 var dashToCamel = function(str) {
-  const dashPattern = /-\S/g;
-  let newStr = '', index = 0, execRes = dashPattern.exec(str);
-  while(execRes) {
-    newStr += `${str.substring(index, execRes.index)}${str[execRes.index+1].toUpperCase()}`;
-    index = execRes.index + 2;
-    execRes = dashPattern.exec(str);
-  }
-  return newStr+str.substring(index);
+  const dashPattern = /(-\S)/g;
+  return str.replace(dashPattern, (_, $2) => $2[1].toUpperCase());
 }
 
 const str = process.argv[2];
